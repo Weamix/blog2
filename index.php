@@ -22,7 +22,7 @@
                             <a class="nav-link" href="">Articles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/progweb/new_article.php">Ajouter un article</a>
+                            <a class="nav-link" href="/progweb/blog/new_article.php">Ajouter un article</a>
                         </li>
                         
                         
