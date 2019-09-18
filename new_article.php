@@ -43,10 +43,13 @@
             <input class="form-control" type="text" id="title" name="title";>
         </div>
         <br>
-        <label for="category">Catégorie de votre article</label>
-        <textarea  class="form-control" id="category" name="category"></textarea>
+        <label>Catégorie de votre article</label>
+        <input  class="form-control" id="category" name="category"></textarea>
         <br>
-        <label for="content">Contenu de votre article</label>
+        <label>Url de l'illustration</label>
+        <input  class="form-control"id="image" name="image"></textarea>
+        <br>
+        <label>Contenu de votre article</label>
         <textarea  class="form-control"id="content" name="content"rows="10"></textarea>
         <br>
         <input type="submit" class="btn btn-primary" id="submit" name="submit">     
@@ -64,17 +67,19 @@ if (!empty($_POST['title']) AND !empty($_POST['content']) and !empty($_POST['cat
     $title = htmlspecialchars($_POST['title']);
     $content = nl2br($_POST['content']);
     $category = htmlspecialchars($_POST['category']);
+    $image = htmlspecialchars($_POST['image']);
     
-    $req = $bdd->prepare('INSERT INTO articles(title, content,created_at, category) VALUES(?,?,?,?)');
+    $req = $bdd->prepare('INSERT INTO articles(title, content,created_at, category,image) VALUES(?,?,?,?,?)');
     if(!$req){
         echo "Prepare failed: (". $bdd->errno.") ".$bdd->error."<br>";
     }
-    $test = $req->execute(array($title, $content, date('Y-m-d H:i:s'),$category));
+    $test = $req->execute(array($title, $content, date('Y-m-d H:i:s'),$category,$image));
 
     //var_dump($test);
     echo "L'article est publié !";
 }
 ?>
+
 
 <style>
 body{

@@ -52,11 +52,37 @@
       dans la catégorie <?php echo $data['category']; ?>
 	</h3>
 
+    <img src="<?= $data['image'] ?>">   
     <p>
         <?php echo nl2br(htmlspecialchars($data[ 'content'])); ?>
     </p>
 
 
+
+    <?php
+     // supprimer un article
+        /* if (isset($_POST['idToDelete'])) {
+            $id = $_POST['idToDelete'];
+            echo $id;
+
+
+        }
+
+        $req=$bdd->prepare('DELETE FROM articles WHERE id = ?'); 
+        $req->execute(array($getid)); 
+        $data = $req->fetch(); 
+    }*/
+    ?>
+    <!-- <form method="post" action="article.php">
+        <button type="submit" name="idToDelete">Supprimer</button>
+    </form> -->
+
+    <style>
+    body{
+        text-align:center;
+    }
+
+    </style>
 
 </body>
 </html>
