@@ -1,14 +1,20 @@
 Backlog
 
 Un utilisateur pourra se rendre sur la homepage et visualiser l'ensemble des articles du blog ✅
+<br>
 Un utilisateur pourra cliquer sur le titre d'un article depuis la homepage est être redirigé sur une autre 
 page détaillant l'article ✅
+<br>
 Un utilisateur peut créer un article ✅
+<br>
 Un article possédera les champs suivants : titre, contenu, date de création, catégorie(s) ✅
-
+<br>
 Un utilisateur peut mdoifier un article
+<br>
 Un utilisateur peut suppriemr un article
+<br>
 Un utilisateur peut créer, modifier ou supprimer une catégorie
+<br>
 Une catégorie possédera uniquement le champ : titre
 
 Bonus
