@@ -4,8 +4,6 @@
         <meta charset="utf-8">
         <title>Home</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
-
-    
     </head>
     
     <body>
@@ -47,9 +45,8 @@
     <h3>
         <?php echo htmlspecialchars($data['title']); ?>
     </h3>
-
     <h2>
-    <a href="article.php?id=<?= $data['id'] ?>"></a>
+        <a href="article.php?id=<?= $data['id'] ?>"></a>
     </h2>
 
     <?php

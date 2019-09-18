@@ -2,7 +2,7 @@
 <html>
     <head lang="fr">
         <meta charset="utf-8">
-        <title>Home</title>
+        <title>Publier un article</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
 
     
@@ -35,28 +35,22 @@
                 </div>
         </nav>
 
-        <div class="new_article">
-
-
 <form action="" method="POST">
-
-<div id="formulaire">
-    <h1 >Rédigez votre article</h1>
-    <div class="form-group">
-        <label for="title">Titre de votre article</label>
-        <input class="form-control" type="text" id="title" name="title";>
+    <div id="formulaire">
+        <h1>Publiez votre article</h1>
+        <div class="form-group">
+            <label for="title">Titre de votre article</label>
+            <input class="form-control" type="text" id="title" name="title";>
+        </div>
+        <br>
+        <label for="category">Catégorie de votre article</label>
+        <textarea  class="form-control" id="category" name="category"></textarea>
+        <br>
+        <label for="content">Contenu de votre article</label>
+        <textarea  class="form-control"id="content" name="content"rows="10"></textarea>
+        <br>
+        <input type="submit" class="btn btn-primary" id="submit" name="submit">     
     </div>
-    <br>
-    <label for="category">Catégorie de votre article</label>
-    <textarea  class="form-control" id="category" name="category"></textarea>
-
-    <br>
-    <label for="content">Contenu de votre article</label>
-    <textarea  class="form-control"id="content" name="content"rows="10"></textarea>
-
-    <br>
-    <input type="submit" class="btn btn-primary" id="submit" name="submit">     
-</div>
 </form>
 
 <?php
@@ -65,7 +59,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=blog2;charset=utf8', 'root', ''); //
 $bdd->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if (isset($_POST['title']) AND isset($_POST['content']) and isset($_POST['category'])){
+if (!empty($_POST['title']) AND !empty($_POST['content']) and !empty($_POST['category'])){
     
     $title = htmlspecialchars($_POST['title']);
     $content = nl2br($_POST['content']);
