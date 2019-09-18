@@ -9,9 +9,9 @@ Un utilisateur peut créer un article ✅
 <br>
 Un article possédera les champs suivants : titre, contenu, date de création, catégorie(s) ✅
 <br>
-Un utilisateur peut mdoifier un article
+Un utilisateur peut modifier un article
 <br>
-Un utilisateur peut suppriemr un article
+Un utilisateur peut supprimer un article
 <br>
 Un utilisateur peut créer, modifier ou supprimer une catégorie
 <br>
