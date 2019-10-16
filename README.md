@@ -9,11 +9,11 @@ Un utilisateur peut créer un article ✅
 <br>
 Un article possédera les champs suivants : titre, contenu, date de création, catégorie(s) ✅
 <br>
-Un utilisateur peut modifier un article
+Un utilisateur peut modifier un article ✅
 <br>
-Un utilisateur peut supprimer un article
+Un utilisateur peut supprimer un article ✅
 <br>
-Un utilisateur peut créer, modifier ou supprimer une catégorie
+Un utilisateur peut créer, modifier ou supprimer une catégorie ✅
 <br>
 Une catégorie possédera uniquement le champ : titre
 
@@ -21,9 +21,9 @@ Bonus
 
 Design (+1) ✅
 <br>
-Système de connexion (+2)
+Système de connexion (+2) ✅
 <br>
-Système de permissions (+2)
+Système de permissions (+2) ✅
 <br>
 Système de commentaires (+2)
 <br>
@@ -37,6 +37,6 @@ Git (+2) ✅
 <br>
 PHPUnit (+5)
 <br>
-Déploiement du blog sur un serveur (+5)
+Déploiement du blog sur un serveur (+5) ✅ => http://www.intelligence-artificielle.ovh/blog/public/index.php
 <br>
 Faire un réseau de neurones sur le dataset MNIST en pur PHP (+42)
